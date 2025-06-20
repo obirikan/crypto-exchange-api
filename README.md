@@ -1,4 +1,4 @@
-# mysql-node-express
+# crypto💸
 
 A production-ready Node.js backend boilerplate built with Express.js and MySQL. This project provides a modular API structure for managing users, wallets, subscribers, P2P trading, and IEO (Initial Exchange Offering) features. 
 
