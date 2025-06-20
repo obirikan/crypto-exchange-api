@@ -27,14 +27,16 @@ dotenv.config();
 // parses incoming requests with JSON payloads
 app.use(express.json());
 app.use(cookieParser());
+
 // enabling cors for all requests by using cors middleware
 app.use(cors());
-// Enable pre-flight
+
+//pre-flight
 app.options("*", cors());
 app.use(
     session({
-      key: "user_sid",
-      secret: "supersecret",
+      key: process.env.SESSION_KEY,
+      secret:process.env.SESSION_SECRET,
       resave: false,
       saveUninitialized: false,
       cookie: {
